@@ -15,6 +15,8 @@ class QuotesViewController: UIViewController {
     @IBOutlet weak var lbAuthor: UILabel!
     @IBOutlet weak var lcTop: NSLayoutConstraint!
     
+    let config = Configuration.shared
+    
     let quotesManager = QuotesManager()
     var timer: Timer?
 
@@ -25,17 +27,27 @@ class QuotesViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        prepareQuote()
+        formatView()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         prepareQuote()
     }
     
+    func formatView() {
+        view.backgroundColor = config.colorScheme == 0 ? .white : UIColor(red: 156.0/255.0, green: 68.0/255.0, blue: 15.0/255.0, alpha: 1.0)
+        lbQuote.textColor = config.colorScheme == 0 ? .black : .white
+        lbAuthor.textColor = config.colorScheme == 0 ? UIColor(red: 192.0/255.0, green: 96.0/255.0, blue: 49.0/255.0, alpha: 1.0) : .yellow
+        prepareQuote()
+        
+    }
+    
     func prepareQuote(){
         timer?.invalidate()
-        timer = Timer.scheduledTimer(withTimeInterval: 8.0, repeats: true) { (timer) in
-            self.showRandomQuote()
+        if config.autorefresh {
+            timer = Timer.scheduledTimer(withTimeInterval: config.timeInterval, repeats: true) { (timer) in
+                self.showRandomQuote()
+            }
         }
         showRandomQuote()
     }
