@@ -70,11 +70,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Pensamentos" image="quotes" id="1wm-3y-cT5"/>
                     <connections>
-                        <outlet property="ivPhoto" destination="oUt-eg-3Vp" id="gww-eE-q62"/>
-                        <outlet property="ivPhotoBg" destination="COb-fF-eZm" id="FcF-13-8KY"/>
-                        <outlet property="lbAuthor" destination="qc1-uR-m2P" id="frH-b9-gPa"/>
-                        <outlet property="lbQuote" destination="8VB-lH-Gql" id="hUi-Sp-ghQ"/>
-                        <outlet property="lcTop" destination="EfK-0g-1WN" id="fcx-Ne-Uyi"/>
+                        <outlet property="ivPhoto" destination="qxL-zq-inM" id="4EG-c0-Pco"/>
+                        <outlet property="ivPhotoBg" destination="COb-fF-eZm" id="1bf-in-jJ4"/>
+                        <outlet property="lbAuthor" destination="qc1-uR-m2P" id="PDY-dR-aHE"/>
+                        <outlet property="lbQuote" destination="8VB-lH-Gql" id="Ip5-yX-X0H"/>
+                        <outlet property="lcTop" destination="EfK-0g-1WN" id="N0b-K4-wvL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
