@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00842DA327AA163A0049E1F5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00842DA227AA163A0049E1F5 /* Settings.bundle */; };
 		00B7FF8327A8B841000AE00B /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 00C2D82627A75B98001CD0C0 /* quotes.json */; };
 		00B7FF8427A8B877000AE00B /* Savoye LET.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 00C2D82527A75B95001CD0C0 /* Savoye LET.ttc */; };
 		00C2D80E27A75A45001CD0C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2D80D27A75A45001CD0C0 /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00842DA227AA163A0049E1F5 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Thoughts/Settings.bundle; sourceTree = SOURCE_ROOT; };
 		00C2D80A27A75A45001CD0C0 /* Thoughts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thoughts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C2D80D27A75A45001CD0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00C2D80F27A75A45001CD0C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				00C2D82F27A77F3A001CD0C0 /* Models */,
 				00C2D81B27A75A45001CD0C0 /* Info.plist */,
 				00C2D81627A75A45001CD0C0 /* Assets.xcassets */,
+				00842DA227AA163A0049E1F5 /* Settings.bundle */,
 			);
 			path = Thoughts;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				00B7FF8327A8B841000AE00B /* quotes.json in Resources */,
 				00C2D81A27A75A45001CD0C0 /* LaunchScreen.storyboard in Resources */,
 				00C2D81727A75A45001CD0C0 /* Assets.xcassets in Resources */,
+				00842DA327AA163A0049E1F5 /* Settings.bundle in Resources */,
 				00C2D81527A75A45001CD0C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
