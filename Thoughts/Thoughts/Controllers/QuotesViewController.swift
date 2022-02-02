@@ -28,6 +28,10 @@ class QuotesViewController: UIViewController {
         prepareQuote()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        prepareQuote()
+    }
+    
     func prepareQuote(){
         timer?.invalidate()
         timer = Timer.scheduledTimer(withTimeInterval: 8.0, repeats: true) { (timer) in
@@ -47,12 +51,17 @@ class QuotesViewController: UIViewController {
         lbAuthor.alpha = 0.0
         ivPhoto.alpha = 0.0
         ivPhotoBg.alpha = 0.0
+        lcTop.constant = 50
+        view.layoutIfNeeded()
         
             UIView.animate(withDuration: 2.5) {
-            self.lbQuote.alpha = 1.0
-            self.lbAuthor.alpha = 1.0
-            self.ivPhoto.alpha = 1.0
-            self.ivPhotoBg.alpha = 0.25
+                self.lbQuote.alpha = 1.0
+                self.lbAuthor.alpha = 1.0
+                self.ivPhoto.alpha = 1.0
+                self.ivPhotoBg.alpha = 0.25
+                self.lcTop.constant = 10
+                self.view.layoutIfNeeded()                
+                
         }
     }
 }
